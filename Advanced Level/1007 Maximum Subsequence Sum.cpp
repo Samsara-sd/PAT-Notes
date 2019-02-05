@@ -22,8 +22,8 @@ int main(int argc, const char* argv[])
 		TempSum += arr[iter];
 		if (TempSum >= MaxSum)
 		{
-      // 如该样例: -1 0 0 -1 输出的应为 0 0 0
-      // 全负会定义 Sum 为0, 如果出现新的子段和0, 则应当更新, 因为此时不是全负(有点绕) 
+                        // 如该样例: -1 0 0 -1 输出的应为 0 0 0
+                        // 全负会定义 Sum 为0, 如果出现新的子段和0, 则应当更新, 因为此时不是全负(有点绕) 
 			if( TempSum > MaxSum || TempSum == 0 )
 			MaxSum = TempSum;
 			start = temp_start;
