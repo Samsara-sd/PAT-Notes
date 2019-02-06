@@ -70,25 +70,25 @@ int main(int argc, const char* argv[])
 	string num = (tag == 1 ? num2 : num1);
 	long long minradix = getminradix(num);
 
-    long long left = minradix, right = sum + 1;
+        long long left = minradix, right = sum + 1;
     
-    while ( left <= right )
+        while ( left <= right )
 	{
-        long long mid = ( right + left ) / 2;
-        long long tempsum = convert_x_to_radix(num, mid);
+        	long long mid = ( right + left ) / 2;
+        	long long tempsum = convert_x_to_radix(num, mid);
 		if (sum == tempsum)
 		{
 			cout << mid;
 			return 0;
 		}
-        else if( sum < tempsum || tempsum < 0 ) // 溢出判断
-        {
-            right = mid - 1;
-        }
-        else
-        {
-            left = mid + 1;
-        }
+        	else if( sum < tempsum || tempsum < 0 ) // 溢出判断
+        	{
+            		right = mid - 1;
+        	}
+        	else
+        	{
+            		left = mid + 1;
+        	}
 	}
 
 	cout << "Impossible";
