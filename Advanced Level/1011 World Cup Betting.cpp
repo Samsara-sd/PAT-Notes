@@ -1,4 +1,4 @@
-// °´ÕÕÌâÄ¿ÖĞµÄ¹«Ê½Ëã
+// æŒ‰ç…§é¢˜ç›®ä¸­çš„å…¬å¼ç®—
 
 #include <iostream>
 #include <iomanip> // fixed & setprecision()
